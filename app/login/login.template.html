@@ -1,0 +1,18 @@
+<form>
+    <div class="container">
+        <p class="registerText"><b>Login</b></p>
+        <hr>
+        <label for="login"><b>Login</b></label>
+        <input type="text" placeholder="Enter Login" name="login" ng-model="$ctrl.login" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" ng-model="$ctrl.password" required>
+        <hr>
+
+        <button type="submit" class="loginBtn" ng-click="$ctrl.loginClick($event)">Login</button>
+    </div>
+
+    <div class="container registration">
+        <p>Don't have an account? <a href="#!/register">Registration</a>.</p>
+    </div>
+</form>

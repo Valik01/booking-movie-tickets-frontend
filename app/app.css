@@ -1,0 +1,36 @@
+body {
+  padding-top: 20px;
+}
+
+.cinemas {
+  list-style: none;
+}
+
+.cinemas li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+}
+
+/* .thumb {
+  float: left;
+  height: 100px;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  width: 100px;
+} */

@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+  
+      </div>
+      <div class="col-md-10">
+        <!--Body content-->
+  
+        <ul class="tickets">
+          <li ng-repeat="ticket in $ctrl.tickets" class="thumbnail">
+            <p>Ряд: {{ticket.raw}}</p>
+            <p>Место: {{ticket.seat}}</p>
+            <p>Цена: {{ticket.price}}</p>
+            <button class="buyBtn" ng-click="$ctrl.buyClick($event, ticket)">Buy</button>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+    <button class="logoutBtn" ng-click="$ctrl.logoutClick($event)">Logout</button>
+  </div>

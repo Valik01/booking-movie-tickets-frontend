@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="cinemaApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cinema Application</title>
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="app.css" />
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.min.js"></script>
+  <script src="lib/angular-cookies/angular-cookies.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="cinema-list/cinema-list.module.js"></script>
+  <script src="cinema-list/cinema-list.component.js"></script>
+  <script src="hall-list/hall-list.module.js"></script>
+  <script src="hall-list/hall-list.component.js"></script>
+  <script src="session-list/session-list.module.js"></script>
+  <script src="session-list/session-list.component.js"></script>
+  <script src="registration/registration.module.js"></script>
+  <script src="registration/registration.component.js"></script>
+  <script src="login/login.module.js"></script>
+  <script src="login/login.component.js"></script>
+  <script src="user-service/user-service.module.js"></script>
+  <script src="user-service/user-service.service.js"></script>
+  <script src="ticket-list/ticket-list.module.js"></script>
+  <script src="ticket-list/ticket-list.component.js"></script>
+</head>
+
+<body>
+  <div ng-view></div>
+</body>
+
+</html>

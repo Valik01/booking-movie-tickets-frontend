@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <!--Sidebar content-->
+  
+        <p>
+          Search:
+          <input ng-model="$ctrl.query" />
+        </p>
+  
+      </div>
+      <div class="col-md-10">
+        <!--Body content-->
+  
+        <ul class="cinemas">
+            <li ng-repeat="cinema in $ctrl.cinemas | filter:$ctrl.query" class="thumbnail">
+                <a href="#!/cinemas/{{cinema.id}}">{{cinema.name}}</a>
+                <p>{{cinema.description}}</p>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+    <button class="logoutBtn" ng-click="$ctrl.logoutClick($event)">Logout</button>
+  </div>
